@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import { useEffect, useState, useRef } from "react";
 import * as React from 'react';
 import { ethers } from "ethers";
@@ -65,21 +63,21 @@ function App() {
       await window.ethereum.request({
         method: "wallet_addEthereumChain",
         params: [{
-            chainId: "0xa86a",
-            rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-            chainName: "Avalanche Mainnet",
-            nativeCurrency: {
-                name: "AVAX",
-                symbol: "AVAX",
-                decimals: 18
-            },
-            blockExplorerUrls: ["https://snowtrace.io/"]
+          chainId: "0xa86a",
+          rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+          chainName: "Avalanche Mainnet",
+          nativeCurrency: {
+            name: "AVAX",
+            symbol: "AVAX",
+            decimals: 18
+          },
+          blockExplorerUrls: ["https://snowtrace.io/"]
         }]
-    });
-    await window.ethereum.request({
-      method: 'wallet_switchEthereumChain',
-      params: [{chainId: '0xa86a'}]
-    });
+      });
+      await window.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0xa86a' }]
+      });
       const providerOptions = {
         /* See Provider Options Section */
         metamask: {
@@ -88,7 +86,7 @@ function App() {
           type: "injected",
           check: "isMetaMask",
         },
-  
+
         walletconnect: {
           package: WalletConnectProvider,
           options: {
@@ -97,12 +95,12 @@ function App() {
           },
         },
       };
-  
+
       const web3Modal = new Web3Modal({
         cacheProvider: false, // optional
         providerOptions, // required
       });
-  
+
       let connection = await web3Modal.connect();
       const provider = new ethers.providers.Web3Provider(connection);
       _provider = provider;
@@ -305,7 +303,7 @@ function App() {
                   <div className="logo">
                     <img
                       src="images/avax.png"
-                      style={{width:"50px", height:"50px"}}
+                      style={{ width: "50px", height: "50px" }}
                       alt="logo"
                     />
                   </div>
@@ -426,9 +424,9 @@ function App() {
 
                     </ThemeProvider> */}
                     <div className="container-slider" id="slider-container">
-                    <input id="js-slider" style={{width:"100%"}} className="container-slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" type="range" min="7" max="21" onInput={e => {daysset(e.target.value);daysChange(e)}}/>
-                      <div className="container-slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="js-slider" style={{pointerEvents:"none"}}><div className="slider-range-inverse" style={{ width: '0%' }} />
-                        <div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style={{ width: '78.5714%' }} /><span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} style={{ left: `${(days-7)/14*100}%` }}><span className="mark" id="depositPeriodDays">{days}</span><span className="dot"><span className="handle-track" style={{ width: '598px', left: '-107.64px' }} /></span></span></div>
+                      <input id="js-slider" style={{ width: "100%" }} className="container-slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" type="range" min="7" max="21" onInput={e => { daysset(e.target.value); daysChange(e) }} />
+                      <div className="container-slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="js-slider" style={{ pointerEvents: "none" }}><div className="slider-range-inverse" style={{ width: '0%' }} />
+                        <div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style={{ width: '78.5714%' }} /><span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} style={{ left: `${(days - 7) / 14 * 100}%` }}><span className="mark" id="depositPeriodDays">{days}</span><span className="dot"><span className="handle-track" style={{ width: '598px', left: '-107.64px' }} /></span></span></div>
                       <ul id="tickmarks" className="datalist">
                         <li>7</li>
                         {/* <li>20</li> */}
