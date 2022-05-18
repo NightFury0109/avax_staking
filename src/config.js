@@ -1,5 +1,5 @@
 export const contract_address = "0xD3fa250D82AA8b71d5034c899af20D8dFfEf5319";
-export const rpc_url =  "https://api.avax.network/ext/bc/C/rpc";//"https://data-seed-prebsc-1-s1.binance.org:8545/";//"HTTP://127.0.0.1:7545";
+export const rpc_url = "https://api.avax.network/ext/bc/C/rpc";
 export const explorer_url = "https://testnet.bscscan.com/address/"
 export const infuraId = "8043bb2cf99347b1bfadfb233c5325c0";
 export const abi = [
