@@ -1,0 +1,800 @@
+@media screen and (max-width: 1475px) {
+    .title-window {
+        font-size: 30px;
+    }
+
+    .faq-block {
+        padding: 17px 25px 25px 25px;
+    }
+
+    .close-faq-item {
+        width: 30px;
+        height: 30px;
+    }
+
+    .title-faq-item {
+        font-size: 16px;
+    }
+
+    .item-faq {
+        padding: 16px 0 16px 0;
+    }
+
+    .close-window {
+        width: 30px;
+        height: 30px;
+        right: 0;
+    }
+
+    .info-warn {
+        margin-left: 15px;
+    }
+
+    .warn-btn {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-logo,
+    .container-logo-footer {
+        margin-left: 15px;
+    }
+
+    .header-contacts,
+    .container-list-contact {
+        margin-right: 15px;
+    }
+}
+@media screen and (min-width: 981px) {
+    .container-first-screen .screen-block {
+        align-items: center;
+        flex-direction: row;
+    }
+    .container-first-screen .screen-block{
+        min-height:50vh;
+        padding-bottom: 150px;   width: auto;
+    }
+    .container-first-screen .screen-block:first-child{
+        flex-grow: 1.5;
+     
+    }
+    .first-screen,
+    .section-info {
+        position: relative;
+    }
+    .first-screen .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+        background-repeat: repeat-x;
+    }
+    .first-screen::after,
+    .section-info::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .first-screen::after {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    }
+    .section-info::after{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+}
+@media screen and (max-width: 980px) {
+    .image-social{
+        flex-direction: column;
+    }
+    .image-news .img-2,.img-3,.img-4{
+        padding-top:5vh;
+        flex:50%;
+    }
+
+    .img-2{
+        width: 12rem !important;
+        height: 6rem;
+    }
+
+    .image-news{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title,
+    .main-title span {
+        font-size: 36px;
+    }
+
+
+    .first-screen .bg-img {
+        display: none;
+    }
+
+    .sub-title-main,
+    .sub-title-main span {
+        font-size: 14px;
+    }
+
+    .pink-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .sub-title-main {
+        margin: 15px 0 40px;
+    }
+
+    .screen-block {
+        min-height: 375px;
+    }
+
+    .result {
+        font-size: 24px;
+        margin-right: 15px;
+    }
+
+    .sub-text-result {
+        font-size: 12px;
+    }
+
+    .block-result {
+        padding: 13px 18px;
+    }
+
+    .first-screen {
+        padding-bottom: 28px;
+    }
+
+    .section-info {
+        padding-top: 100px;
+    }
+
+    .title-header {
+        font-size: 30px;
+    }
+
+    .header-section {
+        margin-bottom: 50px;
+    }
+
+    .container-calculate-info {
+        margin: 0 15px;
+    }
+
+    .container-calculate-info {
+        padding: 37px 25px 36px 25px;
+        max-width: 856px;
+    }
+
+    .invest-btn {
+        width: 225px;
+        height: 40px;
+    }
+
+    .container-dashboard-info {
+        margin: 0 15px;
+        padding: 42px 25px 39px 25px;
+        max-width: 857px;
+    }
+
+    .main-container-center {
+        max-width: 100%;
+        width: 95%;
+    }
+
+    .withdraw-btn {
+        width: 210px;
+        height: 45px;
+    }
+    .container-list-faq {
+        max-height: 550px;
+        overflow-y: auto;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) and (orientation: landscape) {
+    .container-list-faq {
+        max-height: 213px;
+        overflow-y: auto;
+        padding-right: 15px;
+    }
+
+    .main-container-center {
+        min-height: auto;
+    }
+
+    .container-window {
+        padding: 20px;
+        min-height: 286px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .item-dashboard > div {
+        padding: 14px 15px 14px;
+        width: 152px;
+        height: 46px;
+    }
+
+    .item-footer {
+        max-width: 140px;
+        margin-right: 15px;
+    }
+
+    .item-footer:last-child {
+        margin-right: 0;
+    }
+
+    .footer-btn-contact {
+        width: 150px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .btn-contact {
+        width: 100px;
+        height: 30px;
+        padding: 12px 30px;
+    }
+
+    .connect {
+        margin-right: 10px;
+    }
+
+    .btn-contact span {
+        font-size: 10px;
+    }
+
+    .item-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .discord .item-link {
+        background-size: 10px 10px;
+    }
+
+    .twitter .item-link,
+    .telegram .item-link {
+        background-size: 10px 8px;
+    }
+
+    .header {
+        padding: 12px 0 14px;
+        min-height: 34px;
+    }
+
+    .container-slider {
+        max-width: 500px;
+    }
+
+    .title-info {
+        font-size: 12px;
+    }
+
+    .item-info p {
+        font-size: 18px;
+    }
+
+    .list-info {
+        width: 100%;
+    }
+
+    .item-dashboard > div {
+        width: 140px;
+    }
+
+    .item-dashboard {
+        margin-right: 15px;
+    }
+
+    .item-dashboard:last-child {
+        margin-right: 0;
+    }
+
+    .warn-container {
+        padding: 10px 0 6px;
+        min-height: 50px;
+    }
+
+    .title-warn {
+        font-size: 16px;
+    }
+
+    .info-warn p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .item-dashboard > div {
+        width: 110px;
+    }
+
+    .info-level {
+        text-align: center;
+    }
+
+    .container-slider {
+        max-width: 395px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .container-slider {
+        max-width: 365px;
+    }
+
+    .list-dashboard,
+    .list-footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-dashboard,
+    .item-footer {
+        margin: 10px;
+    }
+
+    .container-dashboard-info {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .container-info-screen {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .screen-block {
+        min-height: auto;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .container-result {
+        align-items: flex-start;
+    }
+
+    .mobile-block {
+        display: none;
+    }
+
+    .mobile-open {
+        margin: 0 auto;
+        display: block;
+        margin-top: 79px;
+        width: 289px;
+        height: 50px;
+    }
+
+    .container-info-screen {
+        padding-top: 30px;
+    }
+
+    .container-counter {
+        flex-direction: column;
+      
+    }
+    .deposit-block{
+        width: 100%;
+    }
+    .title-deposit {
+        margin-bottom: 74px;
+    }
+
+    .deposit {
+        width: 100%;
+        min-height: 105px;
+        margin-bottom: 25px;
+    }
+
+    .container-slider {
+        max-width: 100%;
+    }
+
+    .container-counter-amount .title-deposit {
+        margin-bottom: 28px;
+    }
+
+    .amount-field {
+        width: 100%;
+    }
+
+    .container-footer-info {
+        flex-direction: column;
+    }
+
+    .mobile-block-list {
+        display: none;
+    }
+
+    .mobile-fade {
+        display: flex;
+        margin-right: 15px;
+    }
+
+    .mobile-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container-footer-btn {
+        width: 100%;
+        margin-top: 17px;
+    }
+
+    .footer-btn-contact {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    .list-connect {
+        margin: 18px 0 0;
+    }
+
+    .container-connect {
+        min-height: 239px;
+    }
+
+    .container-window {
+        padding: 15px;
+        min-height: 204px;
+    }
+
+    .title-window {
+        font-size: 20px;
+    }
+
+    .container-list-faq {
+        max-height: 171px;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .container-header {
+        flex-direction: column;
+    }
+
+    .container-logo {
+        margin-bottom: 15px;
+        max-width: 200px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .logo,
+    .logo img {
+        width: 100%;
+    }
+
+    .warn-container .container-info {
+        flex-direction: column;
+    }
+
+    .warn-btn {
+        align-self: flex-end;
+    }
+
+    .info-warn {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .title-warn {
+        margin-bottom: 5px;
+    }
+
+    .warn-container {
+        padding: 10px 0 10px;
+        min-height: 84px;
+    }
+
+    .info-warn {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .item-dashboard:last-child {
+        margin-right: 15px;
+    }
+
+    .list-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-info {
+        justify-content: space-between;
+        width: 48%;
+        margin-top: 15px;
+    }
+
+    .item-info:first-child {
+        margin-right: 15px;
+    }
+
+    .item-info:last-child {
+        width: 100%;
+    }
+
+    .invest-btn {
+        width: 270px;
+        margin-top: 26px;
+    }
+
+    .title-header {
+        font-size: 18px;
+    }
+
+    .header-section {
+        margin-bottom: 30px;
+    }
+
+    .footer-counter {
+        margin-top: 20px;
+    }
+
+    .item-dashboard,
+    .item-footer {
+        margin: 7px;
+    }
+
+    .item-dashboard:last-child {
+        margin-right: 7px;
+    }
+
+    .item-dashboard > div {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .item-footer {
+        max-width: 110px;
+    }
+
+    .title-footer-dashboard {
+        margin-bottom: 20px;
+    }
+
+    .container-btn-contacts {
+        margin: 0 10px;
+    }
+
+    .withdraw-btn {
+        width: 180px;
+        height: 40px;
+    }
+
+    .main-title,
+    .main-title span {
+        font-size: 30px;
+    }
+
+    .item-info {
+        width: auto;
+    }
+
+    .list-info {
+        justify-content: space-between;
+    }
+
+    .container-window {
+        padding: 20px;
+    }
+
+    .title-window {
+        font-size: 20px;
+    }
+
+    .list-connect {
+        margin: 25px 0 0;
+    }
+
+    .container-connect {
+        min-height: 246px;
+        width: 90%;
+    }
+
+    .title-window {
+        font-size: 30px;
+    }
+
+    .container-info-faq p {
+        font-size: 10px;
+    }
+
+    .container-list-faq {
+        max-height: 482px;
+        overflow-y: auto;
+        padding-right: 15px;
+    }
+
+    .faq-block {
+        padding: 17px 10px 25px 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container-list-faq {
+        max-height: 422px;
+    }
+    .contact-list .item-link {
+        width: 42px;
+        height: 42px;
+        background-size: calc(100% - 24px);
+        margin: 5px;
+    }
+
+    .btn-contact {
+        width: 100%;
+        height: 42px;
+        margin: 0 auto 8px;
+        min-width: fit-content;
+    }
+    .pink-btn {
+        height: 42px;
+    }
+    .pink-btn,
+    .container-list-contact {
+        width: calc(100% - 30px);
+    }
+    .sub-title-main {
+        margin: 15px 0 25px;
+        max-width: 95%;
+    }
+
+    .sub-title-main,
+    .sub-title-main span {
+        font-size: 12px;
+    }
+
+    .main-title,
+    .main-title span {
+        font-size: 24px;
+    }
+
+    .title-window {
+        font-size: 20px;
+    }
+
+    .item-connect {
+        margin-bottom: 10px;
+    }
+
+    .item-dashboard > div {
+        padding: 10px;
+        width: 108px;
+    }
+
+    .container-connect {
+        min-height: 230px;
+    }
+
+    .item-dashboard,
+    .item-footer {
+        margin: 4px;
+    }
+
+    .title-faq-item {
+        font-size: 14px;
+    }
+
+    .connect {
+        margin-right: 5px;
+    }
+
+    .item-info p {
+        font-size: 16px;
+    }
+
+    .container-dashboard-info {
+        padding: 20px;
+    }
+
+    .title-footer-dashboard {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .item-faq {
+        padding: 10px 0 10px 0;
+    }
+
+    .container-list-faq {
+        max-height: 384px;
+    }
+
+    .main-container-center {
+        min-height: 200px;
+    }
+    .container-footer-info > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-info-screen {
+        justify-content: flex-start;
+    }
+    .item-dashboard,
+    .item-footer {
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+    .header-contacts {
+        flex-direction: column;
+    }
+    .item-dashboard > div {
+        width: calc(100% - 20px);
+    }
+    .footer .contact-list,
+    .footer .container-logo,
+    .container-logo-footer > span,
+    .footer .container-list-contact,
+    .footer .container-logo-footer,
+    .footer .footer-btn-contact {
+        margin: 8px auto;
+    }
+    .withdraw-btn,
+    .mobile-open {
+        max-width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .invest-btn {
+        width: 100%;
+    }
+    .block-result {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .block-result > p {
+        margin: 0 auto 6px;
+    }
+    .sub-text-result {
+        max-width: 100%;
+    }
+    .mobile-open {
+        margin-top: 32px;
+    }
+    .header-contacts,
+    .container-list-contact {
+        margin-right: 0;
+    }
+    .container-btn-contacts .btn-contact{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .footer-btn-contact {
+        font-size: 14px;
+    }
+}
