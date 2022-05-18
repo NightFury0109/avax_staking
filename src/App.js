@@ -120,19 +120,7 @@ function App() {
       console.log(err)
       setConnectCaption("Connect")
     }
-    // alert(balance)
   }
-
-  useEffect(async () => {
-    // refreshProfit(days);
-    // if (!refreshing) {
-    //   setInterval(async () => {
-    //     refreshing = true;
-    //     await refresh();
-    //   }, 1000)
-    // }
-    // await refresh();
-  }, []);
 
   function valChange(e) {
     refreshProfit(days);
